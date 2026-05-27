@@ -40,7 +40,7 @@ def get_config(asset_uid=None):
     kc_url = conf['kc_url']
     config = {
         'assets_url': f'{kf_url}/api/v2/assets/?limit=500&q=date_deployed__isnull:False',
-        'submission_url': f'{kc_url}/api/v1/submissions',
+        'submission_url': f'{kc_url}/submission',
         'headers': {
             'Authorization': f'Token {token}'
         },
